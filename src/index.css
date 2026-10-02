@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    background-color: #050B14;
+    color: #e2e8f0;
+  }
+}
+
+.glass-panel {
+  @apply bg-[#081222]/80 backdrop-blur-xl border border-[#1e3a8a]/60 rounded-2xl shadow-xl transition-all duration-500 hover:border-[#00e5ff]/60 hover:shadow-[0_10px_30px_rgba(0,229,255,0.25)] hover:-translate-y-1;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.8), 0 0 25px rgba(0, 229, 255, 0.4);
+}
+
+.glow-box {
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.4), inset 0 0 15px rgba(0, 229, 255, 0.15);
+}
+
+.glow-icon {
+  filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.8)) drop-shadow(0 0 20px rgba(0, 229, 255, 0.4));
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050B14; 
+}
+::-webkit-scrollbar-thumb {
+  background: #112240; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1e3a8a; 
+}
