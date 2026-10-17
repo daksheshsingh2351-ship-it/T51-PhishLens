@@ -56,5 +56,3 @@ PhishLens relies on **Client-Side Heuristics** for its primary threat detection.
 - **Current Limitations:** The application relies entirely on static, client-side heuristics. Without a backend threat-intelligence API, it cannot detect newly registered malicious domains that employ standard obfuscation tactics (like using HTTPS and normal-looking domains). Unknown URLs are correctly flagged as `UNVERIFIED` due to this limitation.
 - **Future Scope:** Integration with live threat intelligence APIs (e.g., Google Safe Browsing or VirusTotal) via a secure backend proxy to provide real-time, real-world domain reputation verification.
 
-## Team Members
-- [Your Team Members]
