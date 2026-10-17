@@ -52,9 +52,6 @@ PhishLens relies on **Client-Side Heuristics** for its primary threat detection.
 
 *Note: For the purposes of the TECHFORGE 2026 demonstration, the application includes simulated API responses to demonstrate how a backend integration would function. Specific test domains (`safe-test.phishlens.local` and `malicious-test.phishlens.local`) bypass heuristics to return guaranteed `SAFE` or `DANGER` verdicts, clearly labeled as `[Simulated Test Result]`. No live threat-intelligence API is currently integrated.*
 
-## Screenshots / Demo Information
-*(Add screenshots of the Dashboard, Scan URL, and QR Code analysis screens here)*
-
 ## Limitations & Future Scope
 - **Current Limitations:** The application relies entirely on static, client-side heuristics. Without a backend threat-intelligence API, it cannot detect newly registered malicious domains that employ standard obfuscation tactics (like using HTTPS and normal-looking domains). Unknown URLs are correctly flagged as `UNVERIFIED` due to this limitation.
 - **Future Scope:** Integration with live threat intelligence APIs (e.g., Google Safe Browsing or VirusTotal) via a secure backend proxy to provide real-time, real-world domain reputation verification.
